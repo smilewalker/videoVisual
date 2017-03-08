@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="video-wrap">
+			<video id="my-video" src="https://inimg01.jiuyan.info/video_ar1.mp4"  width="480" height="320" poster="img/test.png" webkit-playsinline>
+			your browser does not support the video tag
+			</video>
+			<!-- <img class="icon-play" src="img/play.png"/> -->
+
+			<div class="controls-wrap">
+				<img id="btn-play" class="btn-video" src="img/btn-play.png">
+				<img id="btn-stop" class="hide" src="img/btn-stop.png">
+
+				<!-- <div class="progress-wrap"> -->
+				<progress value="50" max="100"></progress>
+				<!-- </div> -->
+				<div class="time-wrap">
+					<span id="video-current">00:00:00</span>
+					<span>/</span>
+					<span id="video-duration">01:10:00</span>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
