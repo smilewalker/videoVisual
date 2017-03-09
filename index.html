@@ -6,8 +6,8 @@
 
 	</head>
 	<body>
-		<div class="video-wrap">
-			<video id="my-video" src="https://inimg01.jiuyan.info/video_ar1.mp4"  width="480" height="320" poster="img/test.png" webkit-playsinline>
+		<div id="video-wrap" class="video-wrap landscape">
+			<video id="my-video" class="" src="https://inimg01.jiuyan.info/video_ar1.mp4"  width="480" height="320" poster="img/test.png" controls playsinline>
 			your browser does not support the video tag
 			</video>
 			<!-- <img class="icon-play" src="img/play.png"/> -->
@@ -16,13 +16,15 @@
 				<img id="btn-play" class="btn-video" src="img/btn-play.png">
 				<img id="btn-stop" class="hide" src="img/btn-stop.png">
 
-				<!-- <div class="progress-wrap"> -->
-				<progress value="50" max="100"></progress>
-				<!-- </div> -->
+				<div class="progress-wrap">
+					<progress id="video-progress" value="0" max="100"></progress>
+					<div id="slipper" class="slipper" draggable="true"></div>
+
+				</div>
 				<div class="time-wrap">
 					<span id="video-current">00:00:00</span>
 					<span>/</span>
-					<span id="video-duration">01:10:00</span>
+					<span id="video-duration">00:00:00</span>
 				</div>
 			</div>
 
